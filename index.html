@@ -4,142 +4,241 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TRADITIONAL ARTISAX BAKERY</title>
+    <link rel="shortcut icon" href="./images/quality_img2.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800;900&family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="">About us</a></li>
-          <li><a href="">Delivery</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Contacts</a></li>
-          <li><a href="">Reviews</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div>
-          <h1>TRADITIONALARTISAX BAKERY</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <button type="button">SHOP NOW</button>
-        </div>
-      </section>
-      <section>
-        <div>
-          <ul>
-            <li>
-              <img src="" alt="" />
-              <p>$8.00(kg)</p>
-              <h4>American Cockie</h4>
-              <button type="button">BUY</button>
-              <button class="info">!</button>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="list nav-list">
+            <li class="nav-item">
+              <a href="" class="nav-link link">About us</a>
             </li>
-            <li>
-              <img src="" alt="" />
-              <p>$4.00</p>
-              <h4>Crushed with chockolate</h4>
-              <button type="button">BUY</button>
-              <button class="info">!</button>
+            <li class="nav-item">
+              <a href="" class="nav-link link">Delivery</a>
             </li>
-            <li>
-              <img src="" alt="" />
-              <p>For piece $4.00</p>
-              <h4>Blackberry pie</h4>
-              <button type="button">BUY</button>
+            <li class="nav-item">
+              <a href="#menu" class="nav-link link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link link">Reviews</a>
             </li>
           </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="wrapper-hero">
+            <h1 class="main-title">TRADITIONAL ARTISAX BAKERY</h1>
+            <p class="hero-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <p class="hero-text">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not
+              only five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged.
+            </p>
+            <button class="btn-round" type="button" data-modal-open>
+              SHOP NOW
+            </button>
+          </div>
         </div>
+      </section>
+      <section class="popular-products">
+        <ul class="list popular-products-list">
+          <li class="popular-products-item">
+            <article class="popular-products-box">
+              <img
+                class="popular-products-img"
+                src="./images/popular-products_img1.png"
+                alt="American Cockie"
+              />
+              <div class="product-item-info">
+                <p class="popular-products-price">$8.00(kg)</p>
+                <h4 class="popular-products-name">American Cockie</h4>
+                <button class="btn-square" type="button">BUY</button>
+                <button class="btn-info">!</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular-products-item">
+            <article class="popular-products-box">
+              <img
+                class="popular-products-img"
+                src="./images/popular-products_img2.png"
+                alt="croissant"
+              />
+              <div class="product-item-info">
+                <p class="popular-products-price">$4.00</p>
+                <h4 class="popular-products-name">Crushed with chockolate</h4>
+                <button class="btn-square" type="button">BUY</button>
+                <button class="btn-info">!</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular-products-item">
+            <article class="popular-products-box">
+              <img
+                class="popular-products-img"
+                src="./images/popular-products_img3.png"
+                alt="Blackberry pie"
+              />
+              <div class="product-item-info">
+                <p class="popular-products-price">For piece $4.00</p>
+                <h4 class="popular-products-name">Blackberry pie</h4>
+                <button class="btn-square" type="button">BUY</button>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
       <section class="menu">
         <div class="container">
-          <h2>Menu</h2>
-          <ul>
-            <li>
-              <img src="" alt="" />
-              <h3>Breads</h3>
-              <button type="button">Order</button>
+          <h2 class="menu-title" id="menu">Menu</h2>
+          <ul class="list menu-list">
+            <li class="menu-item">
+              <div class="wrapper-item">
+                <img
+                  class="menu-item-img"
+                  src="./images/bread.png"
+                  alt="Bread"
+                />
+                <h3 class="menu-item-name">Breads</h3>
+              </div>
+              <button class="btn-round" type="button">Order</button>
             </li>
-            <li>
-              <img src="" alt="" />
-              <h3>Bekary</h3>
-              <button type="button">Order</button>
+            <li class="menu-item">
+              <div class="wrapper-item">
+                <img
+                  class="menu-item-img"
+                  src="./images/menu_img2.png"
+                  alt="croissant and bun"
+                />
+                <h3 class="menu-item-name">Bekary</h3>
+              </div>
+              <button class="btn-round" type="button">Order</button>
             </li>
-            <li>
-              <img src="" alt="" />
-              <h3>Cakes & Capcakes</h3>
-              <button type="button">Order</button>
+            <li class="menu-item">
+              <div class="wrapper-item">
+                <img
+                  class="menu-item-img"
+                  src="./images/menu_img3.png"
+                  alt="Cakes and Capcakes"
+                />
+                <h3 class="menu-item-name">Cakes & Capcakes</h3>
+              </div>
+              <button class="btn-round" type="button">Order</button>
             </li>
-            <li>
-              <img src="" alt="" />
-              <h3>Coockies&Pretzels</h3>
-              <button type="button">Order</button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <h2>Quality our bekary</h2>
-          <ul>
-            <li>
-              <img src="" alt="" />
-              <ol>
-                <li>Flour with fresh wheat</li>
-                <li>New drozzhi</li>
-                <li>Fresh eggs</li>
-                <li>Water from the well</li>
-              </ol>
-            </li>
-            <li>
-              <img src="" alt="" />
-              <ol>
-                <li>Flour with fresh wheat</li>
-                <li>New drozzhi</li>
-                <li>Fresh eggs</li>
-                <li>Water from the well</li>
-              </ol>
-            </li>
-            <li>
-              <img src="" alt="" />
-              <ol>
-                <li>Flour with fresh wheat</li>
-                <li>New drozzhi</li>
-                <li>Fresh eggs</li>
-                <li>Water from the well</li>
-              </ol>
+            <li class="menu-item">
+              <div class="wrapper-item">
+                <img
+                  class="menu-item-img"
+                  src="./images/menu_img4.png"
+                  alt="Coockies and Pretzels"
+                />
+                <h3 class="menu-item-name">Coockies&Pretzels</h3>
+              </div>
+
+              <button class="btn-round" type="button">Order</button>
             </li>
           </ul>
         </div>
       </section>
-      <section>
+      <section class="quality">
         <div class="container">
-          <h2>Why TRADITIONALARTISAX BAKERY ?</h2>
-          <ul>
-            <li>
-              <p>Order at home</p>
+          <h2 class="quality-title">Quality our bekary</h2>
+          <ul class="list quality-list">
+            <li class="quality-item">
+              <img class="quality-img" src="./images/bread.png" alt="Bread" />
+              <ol class="quality-recipe-list">
+                <li class="recipe-item">Flour with fresh wheat</li>
+                <li class="recipe-item">New drozzhi</li>
+                <li class="recipe-item">Fresh eggs</li>
+                <li class="recipe-item">Water from the well</li>
+              </ol>
             </li>
-            <li>
-              <p>Fresh food</p>
+            <li class="quality-item">
+              <img
+                class="quality-img"
+                src="./images/quality_img2.png"
+                alt="Coockies with chocolate"
+              />
+              <ol class="quality-recipe-list">
+                <li class="recipe-item">Flour with fresh wheat</li>
+                <li class="recipe-item">New drozzhi</li>
+                <li class="recipe-item">Fresh eggs</li>
+                <li class="recipe-item">Water from the well</li>
+              </ol>
             </li>
-            <li>
-              <p>Speed Delivery 24 h</p>
+            <li class="quality-item">
+              <img
+                class="quality-img"
+                src="./images/quality_img3.png"
+                alt="Pie"
+              />
+              <ol class="quality-recipe-list">
+                <li class="recipe-item">Flour with fresh wheat</li>
+                <li class="recipe-item">New drozzhi</li>
+                <li class="recipe-item">Fresh eggs</li>
+                <li class="recipe-item">Water from the well</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="advantages-title">Why TRADITIONALARTISAX BAKERY ?</h2>
+          <ul class="list advantages-list">
+            <li class="advantages-item">
+              <svg class="advantages-icon" width="218" height="183">
+                <use href="./images/icons.svg#icon-advantages_svg1"></use>
+              </svg>
+              <p class="advantages-text">Order at home</p>
+            </li>
+            <li class="advantages-item">
+              <svg class="advantages-icon" width="218" height="194">
+                <use href="./images/icons.svg#icon-advantages_svg2"></use>
+              </svg>
+              <p class="advantages-text">Fresh food</p>
+            </li>
+            <li class="advantages-item">
+              <svg class="advantages-icon" width="218" height="183">
+                <use href="./images/icons.svg#icon-advantages_svg3"></use>
+              </svg>
+              <p class="advantages-text">Speed Delivery 24 h</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer" id="contacts">
       <div class="container">
-        <h3>Where</h3>
+        <h3 class="title-location">Where</h3>
         <iframe
+          class="footer-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.579762426146!2d36.333343775298566!3d49.9629851223441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a4ca01a43cb%3A0xe6da4398e569d326!2z0JrRg9C70LjQvdC40YfQuA!5e0!3m2!1sru!2sua!4v1695793082009!5m2!1sru!2sua"
           width="535"
           height="487"
@@ -148,48 +247,123 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <h3>How</h3>
-        <address>
-          <a href="tel:++380551231312">+38 055 123 13 12</a>
-          <ul>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"></a
-              >Tik tok.:@TR.Bekary
-            </li>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Inst:@TR.Bekary</a
+        <div class="wrapper-footer">
+          <div>
+            <h3 class="footer-title">How</h3>
+            <address class="footer-address">
+              <a class="link address-phone" href="tel:++380551231312"
+                >+38 055 123 13 12</a
               >
+              <ul class="list social-links-list">
+                <li class="social-link-item">
+                  <a
+                    class="link social-link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Tik tok.:@TR.Bekary</a
+                  >
+                </li>
+                <li class="social-link-item">
+                  <a
+                    class="link social-link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Inst:@TR.Bekary</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div>
+            <h3 class="footer-title">When</h3>
+            <p class="time-work">
+              with <time datetime="2023-01-01T08:30">8:30</time> to <br /><time
+                datetime="2023-01-01T20:30"
+              >
+                20:30</time
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-second">
+      <div class="container">
+        <div>
+          <p class="logo">TRADITIONAL ARTISAX BAKERY</p>
+          <p class="footer-text">We want be helthy</p>
+        </div>
+        <div>
+          <h3 class="footer-title-second">About</h3>
+          <ul class="list footer-list">
+            <li class="footer-list-item">
+              <a href="#" class="link footer-second-link">About us</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="link footer-second-link">Features</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="link footer-second-link">News & Blog</a>
             </li>
           </ul>
-        </address>
-        <h3>When</h3>
-        <time>with 8:30 to 20:30</time>
+        </div>
+        <div>
+          <h3 class="footer-title-second">Movement</h3>
+          <ul class="list footer-list">
+            <li class="footer-list-item">
+              <a href="#" class="link footer-second-link">What Eatly</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="link footer-second-link">Support Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title-second">Company</h3>
+          <ul class="list footer-list">
+            <li class="footer-list-item">
+              <a href="#" class="link footer-second-link">Why Eatly</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="link footer-second-link">Capital</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="link footer-second-link">Securaty</a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <p class="slogan">@2022 Eatly.All right riserved.</p>
     </footer>
-    <footer>
-      <div class="container">
-        <p>TRADITIONAL ARTISAX BAKERY</p>
-        <p>We want be helthy</p>
-        <h3>About</h3>
-        <ul>
-          <li>About us</li>
-          <li>Features</li>
-          <li>News & Blog</li>
-        </ul>
-        <h3>Movement</h3>
-        <ul>
-          <li>What Eatly</li>
-          <li>Support Us</li>
-        </ul>
-        <h3>Company</h3>
-        <ul>
-          <li>Why Eatly</li>
-          <li>Capital</li>
-          <li>Securaty</li>
-        </ul>
-        <p>@2022 Eatly.All right riserved.</p>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" data-modal-close type="button">
+          <svg class="close-black" width="32" height="32">
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+        <form class="form-modal">
+          <h2 class="modal-title">TRADITIONAL ARTISAX BAKERY</h2>
+          <input
+            class="input-shop-now"
+            type="email"
+            name="email"
+            placeholder="Your  adress"
+            autofocus
+          />
+          <input
+            class="input-shop-now"
+            type="number"
+            name="number-card"
+            placeholder="Your card"
+          />
+          <button class="btn-round btn-shop-now" type="button">SHOP NOW</button>
+        </form>
+        <img src="./images/bread_modal.png" alt="bread" />
       </div>
-    </footer>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
